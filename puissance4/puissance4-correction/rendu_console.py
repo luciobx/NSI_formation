@@ -43,19 +43,4 @@ def afficher_gagnant(joueur: int) -> None:
     print(f"Le joueur {couleur} a gagné.")
 
 
-def choisir_colonne() -> int:
-    """
-    demande la colonne
-    vérifie si c'est un nombre
-
-    Returns:
-        int: la colonne choisie
-    """
-    while True:
-        try:
-            rep = int(input("Dans quelle colonne placez-vous le jeton? "))
-            break
-        except ValueError:
-            print("Il faut un nombre")
-    return rep
 

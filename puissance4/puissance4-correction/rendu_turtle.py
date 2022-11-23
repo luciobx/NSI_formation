@@ -58,22 +58,3 @@ def afficher_gagnant(joueur: int) -> None:
           font=("Verdana", TAILLE//5, "normal"))
     mainloop()
 
-
-def choisir_colonne() -> int:
-    """
-    demande la colonne
-    vérifie si c'est un nombre
-
-    Returns:
-        int: la colonne choisie
-    """
-    while True:
-        try:
-            rep=int(textinput("Puissance 4",
-                      "Dans quelle colonne placez-vous le jeton?"))
-            break
-        except ValueError:
-            print("Il faut un nombre")
-        except TypeError:
-            print("Il faut un nombre")
-    return rep
